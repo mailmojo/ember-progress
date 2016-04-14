@@ -5,20 +5,24 @@ moduleForComponent('progress-circle', 'Integration | Component | progress circle
   integration: true
 });
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+test('it renders', function (assert) {
+  assert.expect(2);
 
   this.render(hbs`{{progress-circle}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  const svg = this.$('svg.progress');
 
-  // Template block usage:
-  this.render(hbs`
-    {{#progress-circle}}
-      template block text
-    {{/progress-circle}}
-  `);
+  assert.equal(svg.length, 1);
+  assert.equal(svg.find('> circle').length, 1);
+});
 
-  assert.equal(this.$().text().trim(), 'template block text');
+test('it renders with a given size', function (assert) {
+  assert.expect(2);
+
+  this.render(hbs`{{progress-circle size=50}}`);
+
+  const svg = this.$('svg.progress');
+
+  assert.equal(svg.width(), 50);
+  assert.equal(svg.height(), 50);
 });
