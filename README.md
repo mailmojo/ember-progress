@@ -1,4 +1,4 @@
-# Ember Progress
+# Ember Progress [![npm version](https://badge.fury.io/js/ember-progress.svg)](https://badge.fury.io/js/ember-progress) [![Build Status](https://travis-ci.org/eliksir/ember-progress.svg?branch=master)](https://travis-ci.org/eliksir/ember-progress) [![Ember Observer Score](https://emberobserver.com/badges/ember-progress.svg)](https://emberobserver.com/addons/ember-progress)
 
 Ember Progress is an [Ember](http://emberjs.com/) addon for displaying
 dead-simple progress indicators.
