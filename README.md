@@ -30,11 +30,11 @@ number between 0 and 100:
 
 Properties that the component understands are summarized in the table below.
 
-| Property name          | Type   | Description                                       |
-| ---------------------- | ------ | ------------------------------------------------- |
-| `progress`             | Number | Progress in percentage (0-100).                   |
-| `size`                 | Number | Pixel width and height of the progress indicator. |
-| `strokeWidth`          | Number | Pixel width of the progress arc.                  |
+| Property name          | Type   | Description                                       | Default |
+| ---------------------- | ------ | ------------------------------------------------- | ------- |
+| `progress`             | Number | Progress in percentage (0-100).                   | 0       |
+| `size`                 | Number | Pixel width and height of the progress indicator. | 48      |
+| `strokeWidth`          | Number | Pixel width of the progress arc.                  | 2       |
 
 The progress indicator can be styled in CSS by targeting the `.progress circle`
 selector. For instance, the following will change the color of the progress
