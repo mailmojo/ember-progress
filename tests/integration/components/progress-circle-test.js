@@ -21,8 +21,8 @@ test('it renders with a given size', function (assert) {
 
   this.render(hbs`{{progress-circle size=50}}`);
 
-  const svg = this.$('svg.progress');
+  const svg = this.$('svg.progress').get(0);
 
-  assert.equal(svg.width(), 50);
-  assert.equal(svg.height(), 50);
+  assert.equal(svg.clientWidth, 50);
+  assert.equal(svg.clientHeight, 50);
 });
