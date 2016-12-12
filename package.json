@@ -1,6 +1,6 @@
 {
   "name": "ember-progress",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Dead-simple progress indicator for your Ember app.",
   "directories": {
     "doc": "doc",
